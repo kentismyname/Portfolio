@@ -69,7 +69,7 @@ body {
 a {
   color: var(--accent-color);
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.3s; 
 }
 
 a:hover {
@@ -576,7 +576,7 @@ section,
 }
 
 .hero h2 {
-  margin: 0;
+  margin-top: -150px;
   font-size: 64px;
   font-weight: 700;
 }
@@ -1328,3 +1328,39 @@ section,
 .bi {
   font-size: 16px;
 }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* Shake every 3 seconds with a pause */
+.download-resume-btn {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: shake 0.5s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+/* Creating an interval effect */
+@keyframes shakeInterval {
+  0%, 85% { transform: translateX(0); } /* Stays still for most of the time */
+  90%, 100% { animation: shake 0.5s ease-in-out; } /* Shakes briefly */
+}
+
+/* Apply the interval effect */
+.download-resume-btn {
+  animation: shake 0.5s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-name: shake;
+  animation-fill-mode: forwards;
+}
+
+
+
