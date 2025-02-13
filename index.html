@@ -1,1 +1,923 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Kent's Portfolio</title><script defer="defer" src="/static/js/main.af389285.js"></script><link href="/static/css/main.befe925f.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kent's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/mine.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">John Kenneth Dalisay</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.facebook.com/johnkenneth.dalisay.58" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://join.skype.com/invite/v1EREYDZKf7u" target="_blank" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li> -->
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/me.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>John Kenneth Dalisay</h2>
+        <p>I'm <span class="typed" data-typed-items="Computer & Laptop Technician, Web Developer, Freelancer, Telemarketer">Computer/Laptop Technician</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Dedicated IT Specialist, Web Developer, and Computer/Laptop Technician with 4 years of experience, including 3 years as a Call Center Agent and 1 year as a Team Leader. Skilled in troubleshooting hardware and software issues, developing web solutions, and leading teams to achieve organizational goals. Eager to upskill and explore new opportunities in the IT and tech industry to further enhance expertise and contribute to innovative projects.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/pic.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Tech Support &amp; Web Developer.</h2>
+            <p class="fst-italic py-3">
+              Reliable IT professional with expertise in system troubleshooting, hardware maintenance, and customer assistance.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>22 April 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://kentportfolio.netlify.app</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+63 965 662 6023</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tayabas City, Philippines</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Senior High School</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>johnkennethdalisay9@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Availability:</strong> <span>Open to new opportunities</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Passionate about problem-solving, customer support, and staying up-to-date with the latest advancements in IT. Always eager to enhance technical skills and explore new tools to provide better and faster solutions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <!-- <section id="skills" class="skills section light-background">
+
+     
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Proficient in diagnosing, troubleshooting, and resolving IT-related issues with expertise in system maintenance and technical support.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Hardware & Software Troubleshooting</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Network Administration (LAN/WAN, VPN, Firewall)</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Operating Systems (Windows, Linux, macOS)</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Helpdesk & Remote Support (TeamViewer, AnyDesk, RDP)</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Call Center Tech Support (VoIP, Dialers, PBX Systems)S</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>IT Infrastructure & Security</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Experienced IT Support Specialist with a strong background in technical troubleshooting, network administration, and system maintenance. Adept at diagnosing and resolving complex hardware, software, and networking issues while delivering excellent customer support.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>John Kenneth Dalisay</h4>
+              <p><em>Dedicated Tech Support Specialist with expertise in IT troubleshooting, system administration, and network support. With years of experience in call center technical support, I have successfully handled a high volume of IT-related issues, ensuring minimal downtime and enhanced productivity for businesses.</em></p>
+              <ul>
+                <li>Tayabas City, Philippines</li>
+                <li>+63 965 662 6023</li>
+                <li>johnkennethdalisay9@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Senior High School Diploma</h4>
+              <!-- <h5>2015 - 2016</h5> -->
+              <p><em>ACEBA Science & Technology Institute Inc. , Tayabas City, PH</em></p>
+              <p>Information Technology, Computer Systems, and Basic Programming</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Web Development Bootcamp KodeGo</h4>
+              <!-- <h5>2015 - 2016</h5> -->
+              <p><em>Designed and developed a responsive portfolio website to showcase skills and projects.
+              </em></p>
+              <p>Technologies Used: HTML, CSS, JavaScript, Nodejs, Reactjs, Mysql, Bootstrap</p>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Key Skills</h3>
+            <div class="resume-item">
+              <ul>
+                <li>Office Suite software.</li>
+                <li>Organizational and time management skills.</li>
+                <li>Team Leadership & Management.</li>
+                <li>Problem solving.</li>
+                <li>Customer service.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Tools that I had experience</h4>
+              <ul>
+                <li>Anydesk</li>
+                <li>Team viewer </li>
+                <li>Visual Studio code(for programming)</li>
+                <li>MS Office</li>
+                <li>Social Media Platforms</li>
+                <li>Github</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>IT Specialist | Web Developer | Computer/Laptop Technician</h4>
+              <!-- <h5>2019 - Present</h5> -->
+              <!-- <p><em>Experion, New York, NY </em></p> -->
+              <ul>
+                <li>Diagnose and repair hardware and software issues for desktops, laptops, and peripherals.</li>
+                <li>Develop and maintain responsive websites using HTML, CSS, JavaScript, and other relevant technologies.</li>
+                <li>Provide technical support and troubleshooting for clients, ensuring minimal downtime and optimal system performance.</li>
+                <li>Collaborate with clients to design and implement web solutions tailored to their business needs.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Team Leader / Outsource BPO</h4>
+              <!-- <h5>2020 - 2024</h5> -->
+              <!-- <p><em>Stepping Stone Advertising, New York, NY</em></p> -->
+              <ul>
+                <li>Supervised a team of call center agents, ensuring high performance and adherence to company policies.</li>
+                <li>Conducted training sessions to improve team productivity and customer service skills.</li>
+                <li>Monitored and evaluated team performance, providing constructive feedback and coaching.</li>
+                <li>Resolved escalated customer issues, maintaining a high level of customer satisfaction.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+
+
+            <div class="resume-item">
+              <h4>Call Center Agent</h4>
+              <!-- <h5>2020 - 2024</h5> -->
+              <!-- <p><em>Stepping Stone Advertising, New York, NY</em></p> -->
+              <ul>
+                <li>Handled inbound and outbound customer calls, addressing inquiries and resolving issues promptly.</li>
+                <li>Maintained accurate records of customer interactions and transactions.</li>
+                <li>Achieved consistent performance metrics, including high customer satisfaction ratings and call resolution rates.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Here are some of my latest web development projects showcasing my skills and expertise.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <!-- <li data-filter="*" class="filter-active">All</li> -->
+            <!-- <li data-filter=".filter-app">Web App</li> -->
+            <!-- <li data-filter=".filter-product">Product</li> -->
+            <!-- <li data-filter=".filter-branding">Branding</li> -->
+            <!-- <li data-filter=".filter-books">Books</li> -->
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Global Medical Equipment</h4>
+                  <p>Committed to offering premium orthopedic braces designed to improve overall mobility.</p>
+                  <a href="assets/img/portfolio/app-1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>  
+                  <a href="https://rightchoicemedicalsupplies.com" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> 
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Cleaning Services PH</h4>
+                  <p>High-quality cleaning services for business, shops, homes, skyscrapers, and condominiums.</p>
+                  <a href="assets/img/portfolio/app-2.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://cleaningservicesph.netlify.app" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-3.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Foodies Express</h4>
+                  <p>Food Delivery App</p>
+                  <a href="assets/img/portfolio/app-3.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://kennethfastfooddelivery.netlify.app/" target="_blank" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div> -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Providing reliable and efficient IT solutions to keep businesses running smoothly. From troubleshooting hardware and software issues to managing network infrastructure, I ensure seamless operations and excellent customer support.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon flex-shrink-0"><i class="bi bi-tools"></i></div>
+                <div>
+                    <h4 class="title"><a class="stretched-link">🔧 Technical Support & Troubleshooting</a></h4>
+                    <p class="description">Quick and efficient resolution of hardware, software, and network issues to minimize downtime.</p>
+                </div>
+            </div>
+            <!-- End Service Item -->
+    
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon flex-shrink-0"><i class="bi bi-hdd-network"></i></div>
+                <div>
+                    <h4 class="title"><a class="stretched-link">🌐 Network & System Administration</a></h4>
+                    <p class="description">Managing and maintaining LAN, WAN, VPN, VoIP, and cloud-based services for optimal performance and security.</p>
+                </div>
+            </div>
+            <!-- End Service Item -->
+    
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon flex-shrink-0"><i class="bi bi-telephone-inbound"></i></div>
+                <div>
+                    <h4 class="title"><a class="stretched-link">📞 Call Center Tech Support</a></h4>
+                    <p class="description">Providing IT support for dialers, PBX systems, and VoIP configurations, ensuring smooth call center operations.</p>
+                </div>
+            </div>
+            <!-- End Service Item -->
+    
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon flex-shrink-0"><i class="bi bi-shield-lock"></i></div>
+                <div>
+                    <h4 class="title"><a class="stretched-link">🔐 Cybersecurity & Data Protection</a></h4>
+                    <p class="description">Implementing security best practices to protect systems from malware, phishing, and unauthorized access.</p>
+                </div>
+            </div>
+            <!-- End Service Item -->
+    
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon flex-shrink-0"><i class="bi bi-motherboard"></i></div>
+                <div>
+                    <h4 class="title"><a class="stretched-link">🛠️ Hardware & Software Maintenance</a></h4>
+                    <p class="description">Installation, configuration, and regular updates for operating systems, applications, and peripherals.</p>
+                </div>
+            </div>
+            <!-- End Service Item -->
+    
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                <div class="icon flex-shrink-0"><i class="bi bi-graph-up"></i></div>
+                <div>
+                    <h4 class="title"><a class="stretched-link">📊 IT Consultation & Optimization</a></h4>
+                    <p class="description">Helping businesses optimize their IT infrastructure with tailored solutions for efficiency, scalability, and security.</p>
+                </div>
+            </div>
+            <!-- End Service Item -->
+        </div>
+      </div>
+    
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Here are some feedback from my clients. ( translated into english )</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Kent quickly diagnosed my computer issue and resolved it in no time. I was struggling with a blue screen error, and he not only fixed it but also optimized my system for better performance. Highly recommended!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <!-- <h4>Ceo &amp; Founder</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Kent provided an IT consultation for my business, helping us streamline our processes and set up cloud-based solutions. His insights were invaluable, and we've seen a huge improvement in efficiency!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <!-- <h4>Designer</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I had constant network drops, and Kent came in and reconfigured everything—no more connection issues! His expertise in network administration is top-notch.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <!-- <h4>Store Owner</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Kent helped me secure my system after I fell victim to a phishing scam. He removed malware, set up security measures, and taught me how to protect my data. I feel much safer now!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <!-- <h4>Freelancer</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>My laptop was running slow, and Kent upgraded my SSD, installed new RAM, and optimized my OS. Now it works like new!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <!-- <h4>Entrepreneur</h4> -->
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+          <h2>Contact Me</h2>
+          <p>Have questions or need IT support? Feel free to reach out, and I'll get back to you as soon as possible.</p>
+      </div>
+  
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row gy-4">
+  
+              <div class="col-lg-5">
+                  <div class="info-wrap">
+                      
+                      <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                          <i class="bi bi-geo-alt flex-shrink-0"></i>
+                          <div>
+                              <h3>My Location</h3>
+                              <p>Tayabas City, Philippines</p>
+                          </div>
+                      </div>
+  
+                      <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                          <i class="bi bi-telephone flex-shrink-0"></i>
+                          <div>
+                              <h3>Call Me</h3>
+                              <p>+63 965 662 6023</p>
+                          </div>
+                      </div>
+  
+                      <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                          <i class="bi bi-envelope flex-shrink-0"></i>
+                          <div>
+                              <h3>Email Me</h3>
+                              <p>johnkennethdalisay9@gmail.com</p>
+                          </div>
+                      </div>
+  
+                      <!-- Google Maps Embed -->
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.887740677497!2d121.59207897691662!3d14.024667986396338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4d62d0c60b33%3A0x56d54f76bad5f664!2s45-46%20Luis%20Palad%20Street%2C%20Tayabas%2C%204327%20Quezon!5e0!3m2!1sen!2sph!4v1739484360220!5m2!1sen!2sph" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+                  </div>
+              </div>
+  
+              <div class="col-lg-7">
+                <form id="contactForm" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                    <div class="row gy-4">
+            
+                        <!-- Name -->
+                        <div class="col-md-6">
+                            <label for="name-field" class="pb-2">Your Name</label>
+                            <input type="text" name="name" id="name-field" class="form-control" placeholder="Enter your name" required="">
+                        </div>
+            
+                        <!-- Email -->
+                        <div class="col-md-6">
+                            <label for="email-field" class="pb-2">Your Email</label>
+                            <input type="email" class="form-control" name="email" id="email-field" placeholder="Enter your email" required="">
+                        </div>
+            
+                        <!-- Subject -->
+                        <div class="col-md-12">
+                            <label for="subject-field" class="pb-2">Subject</label>
+                            <input type="text" class="form-control" name="subject" id="subject-field" placeholder="Enter subject" required="">
+                        </div>
+            
+                        <!-- Message -->
+                        <div class="col-md-12">
+                            <label for="message-field" class="pb-2">Message</label>
+                            <textarea class="form-control" name="message" rows="5" id="message-field" placeholder="Write your message here..." required=""></textarea>
+                        </div>
+            
+                        <!-- Status Messages -->
+                        <div class="col-md-12 text-center">
+                            <div class="status-message">
+                                <div class="loading alert alert-info" style="display: none;">
+                                    <i class="bi bi-hourglass-split"></i> Sending your message...
+                                </div>
+                                <div class="error-message alert alert-danger" style="display: none;">
+                                    <i class="bi bi-x-circle"></i> Oops! Something went wrong. Please try again.
+                                </div>
+                                <div class="sent-message alert alert-success" style="display: none;">
+                                    <i class="bi bi-check-circle"></i> Your message has been sent successfully! Thank you.
+                                </div>
+                            </div>
+            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+            
+                    </div>
+                </form>
+            </div>
+            
+            <script>
+                document.getElementById("contactForm").addEventListener("submit", function (e) {
+                    e.preventDefault(); // Prevent default form submission
+            
+                    const form = e.target;
+            
+                    // Extract form data
+                    const formData = {
+                        name: form.name.value,
+                        email: form.email.value,
+                        subject: form.subject.value,
+                        message: form.message.value,
+                    };
+            
+                    // Show loading message
+                    document.querySelector(".loading").style.display = "block";
+                    document.querySelector(".error-message").style.display = "none";
+                    document.querySelector(".sent-message").style.display = "none";
+            
+                    // Send data to Google Sheets
+                    fetch("https://script.google.com/macros/s/AKfycbzbH1elND8R5se2p1XiPIuLAS1XGGnkKdYI5wXy8lLaQQ_X8UNv-yl9mGmJiyuUaF6u/exec", {
+                        method: "POST",
+                        mode: "no-cors",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(formData),
+                    })
+                    .then(() => {
+                        // Hide loading and show success message
+                        document.querySelector(".loading").style.display = "none";
+                        document.querySelector(".sent-message").style.display = "block";
+                        document.querySelector(".error-message").style.display = "none";
+            
+                        form.reset(); // Reset form fields
+            
+                        // Hide success message after 3 seconds
+                        setTimeout(() => {
+                            document.querySelector(".sent-message").style.display = "none";
+                        }, 3000);
+                    })
+                    .catch(() => {
+                        // Hide loading and show error message
+                        document.querySelector(".loading").style.display = "none";
+                        document.querySelector(".sent-message").style.display = "none";
+                        document.querySelector(".error-message").style.display = "block";
+                    });
+                });
+            </script>
+            
+            
+  
+          </div>
+  
+      </div>
+  
+    </section>
+  
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kent</strong> <span>All Rights Reserved</span></p> 
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.facebook.com/johnkenneth.dalisay.58">John Kenneth Dalisay</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
